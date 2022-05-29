@@ -1,4 +1,4 @@
-var palavras = ["centro", "sorvete", "parcela", "caminho", "avante", "jornal", "casca", "visivel", "internet", "deletar"];
+var palavras = ["carinho", "saudade", "imagem", "caderno", "poesia", "alegria", "luz", "perfeito", "internet", "amora"];
 var tela = document.querySelector("html");
 var entrada = document.querySelector(".entrada");
 var i = Math.floor(Math.random() * palavras.length);
@@ -68,7 +68,7 @@ entrada.addEventListener("input", function(){
         var tela = document.querySelector("canvas");
         var pincel = tela.getContext("2d");
 
-        console.log("errou uma vez, hehe");
+        console.log("Ops, errou!");
         pincel.strokeStyle = 'purple';
         pincel.beginPath();
         pincel.arc(347, 127, 35, 0, 2*3.14);
