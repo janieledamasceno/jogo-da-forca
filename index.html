@@ -12,7 +12,8 @@
 </head>
 <body>
     <!-- DIV CONTENDO A LOGO DA ALURA -->
-    <header class="logo"><img src="img/alura-icone.png" alt="logo da alura"></header>
+    <header class="logo"><img src="img/alura-icone.png" alt="logo da alura">
+    </header>
     <main class="principal">
 
         <!-- DIV ONDE É EXIBIDO O TEXTO DE VITÓRIA OU DERROTA -->
@@ -20,10 +21,10 @@
 
         <!-- DIVs PARA EXIBIR O CONTEÚDO PRINCIPAL (A SER ALTERADO PELO JS) -->
         <div class="tabuleiros tabuleiro1">
-            <button class="botoes botao1" onclick="start()">Iniciar jogo</button>
+            <button class="botoes botao1" id="buttonfirst" onclick="start()">Iniciar jogo</button>
         </div>
         <div class="tabuleiros tabuleiro2">
-            <button class="botoes botao2" onclick="criaCampo()" >Adicionar nova palavra</button>
+            <button class="botoes botao2" id="buttonsecond" onclick="criaCampo()">Adicionar nova palavra</button>
         </div>
 
         <!-- DIV PARA EXIBIR AS LETRAS QUE NÃO ESTÃO CONTIDAS NA PALAVRA A SER DESCOBERTA -->
