@@ -1,2 +1,2 @@
-# jogo-da-forca
-Jogo da forca, desenvolvido para o Challenge Alura
+# Jogo da Forca
+Projeto desenvolvido para o desafio de Challenge Oracle ONE.
