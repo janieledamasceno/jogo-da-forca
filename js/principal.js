@@ -41,16 +41,16 @@ entrada.addEventListener("input", function(){
             caracteres.push(this.value.toUpperCase());
 
             if (!palavras[i].includes(this.value.toLowerCase())){ // FUNCIONALIDADE QUE VERIFICA SE A LETRA DIGITADA ESTÁ CONTIDA NO ARRAY "PALAVRAS"
-                mostraErros.innerHTML += `${this.value.toUpperCase()}`; // SE NÃO, ESCREVE A LETRA NA DIV COM A CLASS "ERROS"
+                mostraErros.innerHTML += `${this.value.toUpperCase()}`; // SE NÃO, ESCREVE A LETRA NA DIV COM A CLASSE "ERROS"
                 erros++; // ADICIONA +1 NA VARIÁVEL "ERROS"
             }
             
-            for(var x = 0; x < palavras[i].length; x++){ // VERIFICA SE A LETRA DIGITADA ESTÁ CONTIDA NAS DIVs COM A CLASS "SUBLINHADO" 
+            for(var x = 0; x < palavras[i].length; x++){ // VERIFICA SE A LETRA DIGITADA ESTÁ CONTIDA NAS DIVs COM A CLASSE "SUBLINHADO" 
                 letras = conteudo[i];
                 
                 if(conteudo[x].textContent == this.value.toUpperCase()){
                     
-                    conteudo[x].classList.remove("esconder"); // SE SIM, REMOVE A CLASS "ESCONDER"
+                    conteudo[x].classList.remove("esconder"); // SE SIM, REMOVE A CLASSE "ESCONDER"
                     acertos++; // ADICIONA +1 NA VARIÁVEL "ACERTOS"
                 }
                 
@@ -63,7 +63,7 @@ entrada.addEventListener("input", function(){
         mensagem.innerHTML = `Parabéns, você venceu!`; 
         novoJogo();
     }
-    // FUNCIONALIDADES QUE VERIFICAM A VARIÁVEL "ERRO" E MODIFICA ELEMENTOS DO CANVAS CONFORME O VALOR DAQUELA, MUDA
+    // FUNCIONALIDADES QUE VERIFICAM A VARIÁVEL "ERRO" E MODIFICA ELEMENTOS DO CANVAS CONFORME O VALOR
     if(erros == 1){ // DESENHA A CABEÇA DO BONECO
         var tela = document.querySelector("canvas");
         var pincel = tela.getContext("2d");
