@@ -1,4 +1,4 @@
-# Jogo da Forca
-Projeto desenvolvido para o desafio de Challenge Oracle ONE.
+# Challenge 02 - Oracle ONE + Alura - Lógica de Programação
+## Jogo da Forca desnvolvido utilizando Javascript
 
 ![alt text](img/jogodaforca.png)
